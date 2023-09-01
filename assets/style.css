@@ -1,0 +1,141 @@
+html {
+  scroll-behavior: smooth;
+}
+:root {
+    --orange: rgb(248, 194, 92);
+    --purple: rgb(95, 18, 95);
+    --font: 'Orbitron', sans-serif;
+}
+body {
+    background-color: var(--orange)
+}
+body, html {
+    height: 100%;
+}
+
+.background-img {
+    height: 100%;
+    z-index: -2;
+}
+
+header {
+    color: var(--purple);
+    font-size: 48px;
+    font-family: var(--font);
+}
+
+.menu {
+    display: inline-flex;
+    position: absolute;
+    top:0; 
+    right:10%;
+    list-style-type: none;
+   
+}
+
+.menu-items {
+    padding: 0 10%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.my-picture {
+    max-width: 15%;
+    max-height: 15%;
+    
+}
+
+.projects {
+    flex: 4;
+    /* background-color: #fff;
+    padding: 50px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .squares-one {
+    border-style: solid;
+    border-color: antiquewhite;
+    border-width: 1px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px;
+    flex: 0 0 500px;
+    box-shadow: 15px 15px 15px #31363a;
+  }
+  
+  /* TODO: Add properties to the cards to achieve the required look */
+  .squares {
+    border-style: solid;
+    border-color: antiquewhite;
+    border-width: 1px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px;
+    flex: 0 0 300px;
+    box-shadow: 15px 15px 15px #31363a;
+  }
+  
+  .squares header {
+    padding: 10px;
+    text-align: center;
+    text-shadow: 2px 2px #31363a;
+  }
+  .squares-one header {
+    padding: 10px;
+    text-align: center;
+    text-shadow: 2px 2px #31363a;
+
+  }
+  
+  .squares p {
+    text-align: center;
+  }
+  
+  .square-img {
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .bottomStuff {
+    font-family: var(--font);
+    text-decoration: none;
+  }
+
+  .bottomStuff h3 {
+    color: var(--purple);
+  }
+
+  .bottomStuff p {
+   font-size: 20px;
+   color: rgb(90, 89, 89);
+  }
+
+  .bottomStuff ul {
+    font-size: 20px;
+
+  }
+
+  .myLinks {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    
+  }
+
+  footer {
+    font-family: var(--font);
+    color: rgb(90, 89, 89);
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 768px) {
+    body,
+    menu {
+      flex-direction: column;
+    }
+  }
+  
